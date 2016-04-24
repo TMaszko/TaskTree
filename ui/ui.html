@@ -7,18 +7,30 @@
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
+    <div class="hideAll is-hidden">
+    </div>
   <div class="container">
     <div class="wrapper">
       <header>
         <h1 class="header">TaskTree</h1>
       </header>
       <button type="button" class="plusBtn"><i class="icon-plus-circled"></i></button>
-    </div>
+
       <main>
         <ul id="tasks">
 
         </ul>
       </main>
+    </div>
+    <section class="taskBox is-hidden">
+      <form class="taskBoxForm">
+        <h2 class="taskBoxhead">New task</h2>
+        <label>Task:<input type="text" id="newTask"></label>
+        <input type="submit" id="okTask" value="OK">
+        <input type="submit" id="cancelTask" value="CANCEL">
+    </form>
+    </section>
+
         <div class="messageEmptyList">
 
         <p> Hi!<br>
