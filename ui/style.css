@@ -1,0 +1,61 @@
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  color:#eeeeee;
+  font-family: 'roboto mono';
+}
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+.wrapper {
+  width:80%;
+  margin:0 auto;
+  position:relative;
+  background:#03a9f4;
+}
+.header{
+  font-size:3em;
+}
+/* Reset Button style*/
+.plusBtn{
+  display:inline-block;
+  position:absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border:none;
+  outline:none;
+  padding:0;
+}
+main{
+  background: #03a9f4;
+}
+.plusBtn:hover{
+  font-size:1.5em;
+  color:blue;
+  transition: all 0.3s ease-in-out;
+}
+.plusBtn .icon-plus-circled{
+  padding:0;
+  font-size:2.2em;
+  background: none;
+  transition: all 0.3s ease-in-out;
+  color:#eeeeee;
+}
+.messageEmptyList{
+  position:absolute;
+  top:50%;
+  transform: translate(-50%,-50%);
+  left:50%;
+  background: #03a9f4;
+  padding:10px;
+  transition: opacity 0.3s ease-in-out;
+}
+.messageEmptyList-hidden{
+  opacity:0;
+  z-index:-10;
+}
