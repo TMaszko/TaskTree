@@ -10,6 +10,7 @@ function TaskList(list){
     return list;
   }
   this.isEmpty =function(){
+    console.log(list.children.length == 0);
     return list.children.length == 0;
   }
 }
